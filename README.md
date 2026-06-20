@@ -1,7 +1,7 @@
 # Double-Diffusion
 
 Code for **Double-Diffusion: Balancing Speed, Accuracy, and Uncertainty in Probabilistic
-Forecasting for Urban Sensor Networks** (ACM SIGSPATIAL 2026, Applications track).
+Forecasting for Urban Sensor Networks** (Currently Under Review ACM SIGSPATIAL 2026, Applications track).
 
 Double-Diffusion integrates a **closed-form graph-heat prior** into a denoising diffusion
 forecaster. The prior propagates the last observation over the sensor graph with no learned
