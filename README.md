@@ -1,7 +1,9 @@
 # Double-Diffusion
 
-Code for **Double-Diffusion: Balancing Speed, Accuracy, and Uncertainty in Probabilistic
-Forecasting for Urban Sensor Networks** (Currently Under Review ACM SIGSPATIAL 2026, Applications track).
+Research code accompanying the manuscript *Double-Diffusion: Balancing Speed, Accuracy, and
+Uncertainty in Probabilistic Forecasting for Urban Sensor Networks*. The paper is currently **under
+review** (submitted to ACM SIGSPATIAL 2026, Applications track); details may change, and this
+repository will be updated accordingly.
 
 Double-Diffusion integrates a **closed-form graph-heat prior** into a denoising diffusion
 forecaster. The prior propagates the last observation over the sensor graph with no learned
@@ -128,20 +130,6 @@ The baseline comparators (STGCN, DLinear, GMSDR, GMAN, DeepAR, MC Dropout, DiffS
 their **official** implementations and are not redistributed in this repository. See the corresponding
 references in the paper for each method's source. Our evaluation uses identical splits, windows,
 normalization, and the same `K=32` full-test protocol for every probabilistic model.
-
-## Citation
-
-```bibtex
-@inproceedings{dong2026doublediffusion,
-  title     = {Double-Diffusion: Balancing Speed, Accuracy, and Uncertainty in
-               Probabilistic Forecasting for Urban Sensor Networks},
-  author    = {Dong, Hanlin and Prabowo, Arian and Xue, Hao and Ao, Shuang and
-               Zhou, Tianyi and Liang, Yuxuan and Salim, Flora D.},
-  booktitle = {Proceedings of the 34th ACM International Conference on Advances in
-               Geographic Information Systems (SIGSPATIAL '26)},
-  year      = {2026}
-}
-```
 
 ## License
 
