@@ -1,0 +1,142 @@
+{
+  "beijing": {
+    "dataset": "beijing",
+    "k": 0.1,
+    "history": 12,
+    "horizon": 12,
+    "use_normalised": true,
+    "n_windows": 2158,
+    "n_nodes": 32,
+    "n_channels": 6,
+    "wall_time_s": 0.64,
+    "spatial": {
+      "low_band_ratio_h_1": 0.21938467585035112,
+      "high_band_ratio_h_1": 0.3603260853406034,
+      "low_band_ratio_h_mid": 0.8590144429019828,
+      "high_band_ratio_h_mid": 0.9125446028675452,
+      "low_band_ratio_h_end": 0.9523628008436555,
+      "high_band_ratio_h_end": 0.9653027967060301
+    },
+    "temporal": {
+      "var_truth_h1": 0.12202032655477524,
+      "var_truth_hend": 0.12242081761360168,
+      "var_ode_h1": 0.002162595377578373,
+      "var_ode_hend": 0.0003104615158530407,
+      "ratio_h1": 0.01772323873111074,
+      "ratio_hend": 0.0025360189705067497
+    },
+    "channel": {
+      "truth_drift_h_end": 0.02555876411497593,
+      "ode_drift_h_end": 0.3963459645844711,
+      "ode_vs_truth_h_end": 0.39544950075307345,
+      "truth_drift_h_mid": 0.017338480800390244,
+      "ode_drift_h_mid": 0.29740957155108927,
+      "ode_vs_truth_h_mid": 0.2968981668981288
+    }
+  },
+  "athens": {
+    "dataset": "athens",
+    "k": 0.1,
+    "history": 12,
+    "horizon": 12,
+    "use_normalised": true,
+    "n_windows": 5373,
+    "n_nodes": 64,
+    "n_channels": 4,
+    "wall_time_s": 5.35,
+    "spatial": {
+      "low_band_ratio_h_1": 0.23346208990052833,
+      "high_band_ratio_h_1": 0.339042860737951,
+      "low_band_ratio_h_mid": 0.8431262554717478,
+      "high_band_ratio_h_mid": 0.9073543726838205,
+      "low_band_ratio_h_end": 0.8833816148616578,
+      "high_band_ratio_h_end": 0.9159129479956676
+    },
+    "temporal": {
+      "var_truth_h1": 0.25555047392845154,
+      "var_truth_hend": 0.2556936740875244,
+      "var_ode_h1": 0.005355710455439556,
+      "var_ode_hend": 0.0007529993101104092,
+      "ratio_h1": 0.020957544602085286,
+      "ratio_hend": 0.002944927412841102
+    },
+    "channel": {
+      "truth_drift_h_end": 0.0008539925911463797,
+      "ode_drift_h_end": 0.7116124889256714,
+      "ode_vs_truth_h_end": 0.7122501505607595,
+      "truth_drift_h_mid": 0.00033936684485524893,
+      "ode_drift_h_mid": 0.5020269416315887,
+      "ode_vs_truth_h_mid": 0.5021779633991853
+    }
+  },
+  "pems08": {
+    "dataset": "pems08",
+    "k": 0.1,
+    "history": 12,
+    "horizon": 12,
+    "use_normalised": true,
+    "n_windows": 3549,
+    "n_nodes": 170,
+    "n_channels": 3,
+    "wall_time_s": 23.44,
+    "spatial": {
+      "low_band_ratio_h_1": 0.10392913794823512,
+      "high_band_ratio_h_1": 0.07548058774792474,
+      "low_band_ratio_h_mid": 0.41843138129533886,
+      "high_band_ratio_h_mid": 0.40598030002396485,
+      "low_band_ratio_h_end": 0.6191720063341541,
+      "high_band_ratio_h_end": 0.6262722724273913
+    },
+    "temporal": {
+      "var_truth_h1": 0.05671725049614906,
+      "var_truth_hend": 0.05654073506593704,
+      "var_ode_h1": 0.00578321094362008,
+      "var_ode_hend": 0.0007683804601433105,
+      "ratio_h1": 0.10196564348641589,
+      "ratio_hend": 0.013589856220426487
+    },
+    "channel": {
+      "truth_drift_h_end": 0.0043069650419056416,
+      "ode_drift_h_end": 0.6196581138954129,
+      "ode_vs_truth_h_end": 0.6210334397016839,
+      "truth_drift_h_mid": 0.002251113299280405,
+      "ode_drift_h_mid": 0.3861153739508928,
+      "ode_vs_truth_h_mid": 0.3867486965719515
+    }
+  },
+  "pems04": {
+    "dataset": "pems04",
+    "k": 0.1,
+    "history": 12,
+    "horizon": 12,
+    "use_normalised": true,
+    "n_windows": 3376,
+    "n_nodes": 307,
+    "n_channels": 3,
+    "wall_time_s": 70.23,
+    "spatial": {
+      "low_band_ratio_h_1": 0.14622787048512254,
+      "high_band_ratio_h_1": 0.08004981167783941,
+      "low_band_ratio_h_mid": 0.4948366115136174,
+      "high_band_ratio_h_mid": 0.4110036226739911,
+      "low_band_ratio_h_end": 0.6891498689153996,
+      "high_band_ratio_h_end": 0.6388203878784234
+    },
+    "temporal": {
+      "var_truth_h1": 0.06661596894264221,
+      "var_truth_hend": 0.06662052869796753,
+      "var_ode_h1": 0.0051095453522254,
+      "var_ode_hend": 0.0006846464650241994,
+      "ratio_h1": 0.07670150916253772,
+      "ratio_hend": 0.010276809241909945
+    },
+    "channel": {
+      "truth_drift_h_end": 0.0003762188134714961,
+      "ode_drift_h_end": 0.6082765200608161,
+      "ode_vs_truth_h_end": 0.6083319188368543,
+      "truth_drift_h_mid": 0.00021755890338681638,
+      "ode_drift_h_mid": 0.3941379004904326,
+      "ode_vs_truth_h_mid": 0.39427280002803256
+    }
+  }
+}

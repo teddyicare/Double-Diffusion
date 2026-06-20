@@ -1,0 +1,20 @@
+# PEMS08 — Traffic (flow, speed, occupancy)
+# N=170, C=3, 5-min intervals
+# 17856 timesteps ≈ 62 days
+#
+# NOT THE SOURCE OF TRUTH. The canonical DD/EDM runs are CLI-driven (industry_validation/
+# run_validation.py + hpc_wrappers/*) and the baselines hard-override future_len in
+# run_baselines.py, so this file is not read by the canonical pipeline. Authoritative paper
+# config: history_len 12, future_len 24, d_model 64, n_blocks 4, patience 20, k* 0.02
+# (auto-fitted), gate ON for traffic, test K=32 / val K=1.
+
+history_len: 12
+future_len: 24
+batch_size: 32
+epochs: 200
+lr: 0.001
+patience: 20
+
+# DiffSTG traffic fix (mirrors glab edit 2026-06-10; canonical DiffSTG PEMS grid):
+# keep S=100, gentler noise schedule. beta_end=0.4 (builder default) diverges on traffic.
+diffstg_beta_end: 0.1

@@ -1,0 +1,16 @@
+# Double-Diffusion - Python dependencies.
+#
+# Install PyTorch built for your CUDA toolkit first, e.g. CUDA 12.x:
+#   pip install torch --index-url https://download.pytorch.org/whl/cu124
+# then:
+#   pip install -r requirements.txt
+#
+# Runtime (training / inference / diagnostics):
+torch>=2.4
+numpy>=1.24
+
+# Data preparation only (preprocessing/build_*.py: distance graph, Laplacian
+# eigendecomposition, raw-file parsing). Not needed once data/<name>/processed exists.
+scipy>=1.10
+pandas>=2.0
+pyyaml>=6.0

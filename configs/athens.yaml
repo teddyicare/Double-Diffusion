@@ -1,0 +1,37 @@
+# config/athens.yaml
+# Athens CAMS Air Quality Dataset  (N=64 graph, C=4)
+#
+# NOT THE SOURCE OF TRUTH. The canonical DD/EDM runs are CLI-driven (industry_validation/
+# run_validation.py + hpc_wrappers/*) and the baselines hard-override future_len in
+# run_baselines.py, so this file is not read by the canonical pipeline. The values below are
+# aligned to the paper config for reference only.
+# Authoritative paper config: history_len 12, future_len 24, d_model 64, n_blocks 4,
+# patience 20, k auto-fitted (kfit_l2_hpc.json), test K=32 / val K=1.
+
+# Data
+history_len: 12
+future_len:  24
+num_workers: 4
+
+# Training
+batch_size:   32
+epochs:       200
+lr:           0.001
+weight_decay: 0.0
+patience:     20
+
+# Diffusion schedule
+n_diffusion_steps: 100
+beta_start:        0.0001
+beta_end:          0.2
+
+# Double-Diffusion specific (same architecture as Beijing)
+d_model:    64
+n_blocks:   4
+expansion:  4
+dropout:    0.1
+k:          0.05    # fitted k* (kfit_l2_hpc.json); auto-loaded at runtime, not from this file
+n_samples:  32
+
+# Pollutants: PM2.5, PM10, NO2, O3 (no CO, SO2)
+# Wind U/V components are directly available — enables full AirPhyNet advection.
